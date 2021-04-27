@@ -1,0 +1,97 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+/* CSS do Menu*/
+nav{
+	width: 1000px;
+	height: 100px;
+	background-color: white;
+	border-radius:100px;
+	font-size:20px;
+	font-family:Courier;
+	font-weight:bolt;
+	text-align: center;
+	text-shadow: 3px 2px 3px black;
+	margin: 0px 105px;
+}
+
+nav ul{
+	height:auto;
+	padding:15px 0px; /*Centralização do Menu*/
+	margin:0px;
+	
+}
+
+nav li{
+	display:inline; /*posiciona o menu em linha*/
+	padding:40px;	/*espaçamento entre os menus*/
+	
+}
+
+nav a{
+	text-decoration: none;/*retira o sublinhado do link*/
+	text-transform: uppercase;
+	color: #FFD700;
+	padding:8px 8px 8px 8px; /*espaçamento entre os menus*/
+}
+
+nav a:hover{
+	color:red;
+	background-color:black;
+	padding:10px;
+	border-radius:10px;
+}
+chiclete{
+	
+	border-radius:160px;
+	background: white;
+	
+	
+}
+pao{
+	margin-right: 50px;
+}
+panetone{
+	border-radius:100px;
+	background: white;
+	margin: 10px 300px;
+}pudim{
+	margin-left: 50px;
+}
+coxinha{
+	border-radius:10px;
+	background-color: red;
+	margin: 0px 300px;
+}
+chicrete{
+		margin: 0px 300px;
+	border-radius:100px;
+	background: white;
+	
+}
+tog{
+	
+	border-radius:100px;
+	background: white;
+	margin: 0px 500px;
+	
+}
+li.paneton{
+	border-radius:10px;
+	background: #999;
+	margin: 0px 10px;
+}
+
+center.hue{
+		position:absolute;
+		top:500px;
+		right:500px;
+	
+}
+center.ue{
+		position:absolute;
+		top:600px;
+		right:50px;
+	
+}

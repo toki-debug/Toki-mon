@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+		<title>  T O K I 門 </title>
+		
+		<meta charset="UTF-8"/>
+		<link href="css.css" rel="stylesheet"/>
+	</head>
+
+  <body bgcolor="black">
+
+	
+		<header>
+		<br>
+				<center><font face="Courier New" color="white" size="50px">T O K I 門</font></center>
+			<br><br><center>
+			<nav align="center">
+				<ul>
+					
+					<li><a href="https://toki-mon.neocities.org/">home</a></li>
+					<li><a href="sobre.html">sobre</a></li>
+					<li><a href="ctf.html">CTF</a></li>
+					<li><a href="crip.html">Criptografia</a></li>
+					<li><a href="prog.html">Programação</a></li>
+				</ul>
+			</nav>
+			</center>
+			<!--<div></div>-->
+		</header>
+		<center><br><font face="Courier New" color="#00FF00" size= "10px">Reply Challenge Criptografia - 2018</font></center>
+			<br><br><center>
+		
+		
+		
+		
+		<section>
+		<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'funciona')" id="defaultOpen">Como funciona?</button>
+  <button class="tablinks" onclick="openCity(event, 'd1')">Desafio 1</button>
+  <button class="tablinks" onclick="openCity(event, 'd2')">Desafio 2</button>
+</div>
+
+<div id="funciona" class="tabcontent">
+  <h3>Bem vindo aos desafios de criptografia</h3>
+  <p>No desafio de criptografia do Reply Challenge o objetivo é alcançar uma flag nesse formato: {FLG:XXYY...}<br>Como o próprio nome já diz, não será uma tarefa tão simples, as flags estarão escondidas dentro de alguma mensagem criptografada. Sendo assim, nossa missão é desvendar a mensagem através dos mais variados conhecimentos nessa área!<br><font color="red">Antes da resolução escrita de cada desafio, tente encontrar a flag do conteúdo!</font></p>
+    
+</div>
+
+<div id="d1" class="tabcontent">
+  <h1>WarMap</h1>
+  <p><a href="/reply/WarMap.txt" download>
+  <img width="100px" height="100px" src="/img/down.png" alt="download arquivo">
+</a>
+  <br><br><br><br><br><br>RESOLUÇÃO:<br></p> 
+  <p style="text-align:left">INICIO<font color="#F1C40F"><br> O primeiro desafio consistia em decifrar o que estava escrito no arquivo WarMap.txt. A princípio não consegui sair do lugar, achei que poderia ser algum .hash, mas nao estava bem certa ainda. Após uma grande ajuda (tk u Iris :3), concluimos que era o formato base64. Utilizando um conversor online <a href="https://www.base64decode.org/">base64</a>, chegamos a uma sequencia binária:<br></font></p>
+    <center> <img src="/img/cripto1_img1.png" alt="Convertendo texto de base64 para binário"> </center>
+  <p style="text-align:left">
+  
+  <br>FIM;<br></p>
+
+
+  
+</div>
+
+<div id="d2" class="tabcontent">
+  <h3>Please+Don't+RFC</h3>
+  <p>Infelizmente por problemas técnicos, nao consegui liberar o arquivo <font color="red">.pcap</font><br>Felizmente, todos os desafios do Reply estão disponíveis no site deles, então é só se inscrever e se divertir!<br><font color="white">LINK:</font><br><br><a href="https://challenges.reply.com/tamtamy/challenges/category/cybersecurity.action#training">Reply Challenge</a></p>
+  <br><br><br>RESOLUÇÃO:<br>
+  <p style="text-align:left"><font color="#F1C40F">INICIO<br>
+ 
+  
+  
+  
+  <br>FIM;<br></font></p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+				
+		</section>
+		
+		
+		
+		
+		<footer>
+      <center>
+      <br><br>
+      <font face="Courier" color="white" size="1px">copyright © 2020 all rights reserved</font>
+      </center>
+      
+		</footer>
+		
+	</body>
+	
+	
+	
+</html>
